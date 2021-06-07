@@ -1,0 +1,44 @@
+.contacts {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+
+  &__item {
+    list-style: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: $image-set-gap;
+  }
+
+  &__link {
+    display: block;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+    fill: currentColor; /*fill: var(--accent-color); */
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
