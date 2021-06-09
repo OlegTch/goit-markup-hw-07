@@ -5,7 +5,8 @@
   flex-wrap: wrap;
 
   &__item:not(:last-child) {
-    margin-right: $nav-set-gap;
+    margin-right: 50px;
+    // margin-right: $nav-set-gap;
   }
 
   &__link {

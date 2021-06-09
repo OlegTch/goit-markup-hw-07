@@ -1,4 +1,9 @@
-@import "./utils/variables"; // _variables
+// UTILS
+
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+// COMPONENTS
 @import "./components/placeholders";
 // @import "./base/normalize";
 @import "./components/container";
@@ -8,5 +13,17 @@
 @import "./components/contacts";
 @import "./components/hero";
 @import "./components/button";
+@import "./components/section";
+
+@import "./components/section-feature";
+@import "./components/section-box";
+@import "./components/section-team";
+@import "./components/section-customer";
+@import "./components/section-portfolio";
 
 @import "./components/footer";
+@import "./components/social-link";
+
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
