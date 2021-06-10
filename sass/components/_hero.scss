@@ -15,7 +15,7 @@
   background-position: center; // всегда по центру
   background-size: cover; // максимальное вмещение картинки в контейнер
 
-  &__title {
+  .hero__title {
     margin: 0 auto 30px auto;
     color: $primary-white-color;
     font-weight: 900;

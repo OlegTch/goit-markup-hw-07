@@ -3,7 +3,7 @@
 .footer {
   background-color: $primary-bg-color;
 
-  &__container {
+  .footer__container {
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -13,48 +13,50 @@
   }
 
   // АДРЕС ПОДВАЛА
-  &__logo {
+  .footer__logo {
     margin-bottom: 20px;
     margin-right: 0;
     color: $primary-white-color;
   }
 
-  &__address {
+  .footer__address {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 9px;
+  .footer__item {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
 
-  &__link {
+  .footer__link {
     color: $contacts-text-color;
 
     transition-property: color;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 
-  &__link:hover,
-  &__link:focus {
-    color: $accent-color;
-  }
-
-  &__link--primary {
+  .footer__link--primary {
     display: block;
     margin-bottom: 9px;
     color: $primary-white-color;
   }
 
   // СОЦИАЛКА ПОДВАЛА
-  &__social-thumb {
+  .footer__social-thumb {
     margin-top: 0px;
     /* margin-right: 93px; */
   }
 
-  &__subtitle {
+  .footer__subtitle {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -66,12 +68,12 @@
   }
 
   // ФОРМА ПОДВАЛА
-  &__form-thumb {
+  .footer__form-thumb {
     display: flex;
     justify-content: flex-end;
   }
 
-  &__form-input {
+  .footer__form-input {
     display: block;
     align-items: center;
     margin: 0;
@@ -91,15 +93,15 @@
     transition-property: border;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
+
+    // .footer-form-field:hover .form-footer-input,
+    &:focus {
+      border: 1px solid $accent-color;
+      outline: none;
+    }
   }
 
-  // .footer-form-field:hover .form-footer-input,
-  &__form-input:focus {
-    border: 1px solid $accent-color;
-    outline: none;
-  }
-
-  &__form-button--primery {
+  .footer__form-button--primery {
     display: flex;
     align-items: center;
     text-align: center;
@@ -114,7 +116,7 @@
     // letter-spacing: 0.06em;
   }
 
-  &__form-icon {
+  .footer__form-icon {
     margin-left: 10px;
     fill: $primary-white-color;
   }

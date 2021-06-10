@@ -53,9 +53,9 @@ ol {
   margin-bottom: calc(-1 * 30px);
   // margin-left: calc(-1 * $image-set-gap);
   // margin-bottom: calc(-1 * $image-set-gap);
+}
 
-  & .item {
-    margin-left: $image-set-gap;
-    margin-bottom: $image-set-gap;
-  }
+.list .item {
+  margin-left: $image-set-gap;
+  margin-bottom: $image-set-gap;
 }

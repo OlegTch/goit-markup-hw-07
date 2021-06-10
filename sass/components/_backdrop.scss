@@ -12,15 +12,15 @@
 
   transition: opacity $duration $timing-function,
     visibility $duration $timing-function;
+}
 
-  &.is-hidden {
-    /* скрываем модальное окно */
-    opacity: 0; /* делаем прозрачный фон */
-    pointer-events: none; /* на элемент не влияет клик мышки  */
-    visibility: hidden; /* скрывает модальное окно */
-  }
+.backdrop.is-hidden {
+  /* скрываем модальное окно */
+  opacity: 0; /* делаем прозрачный фон */
+  pointer-events: none; /* на элемент не влияет клик мышки  */
+  visibility: hidden; /* скрывает модальное окно */
+}
 
-  &.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.1);
-  }
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.1);
 }

@@ -4,12 +4,12 @@
   background-color: $secondary-bg-color;
   text-align: center;
 
-  &__item {
+  .team__item {
     flex-basis: calc(100% / 4 - 30px);
     // flex-basis: calc(100% / 4 - $image-set-gap);
   }
 
-  &__thumb {
+  .team__thumb {
     background-color: $primary-white-color;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -18,7 +18,7 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
   }
 
-  &__subtitle {
+  .team__subtitle {
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -26,7 +26,7 @@
     line-height: 1.2;
   }
 
-  &__text {
+  .team__text {
     margin-top: 0;
     margin-bottom: 16px;
 

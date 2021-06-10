@@ -4,15 +4,15 @@
   margin-bottom: 0;
   flex-wrap: wrap;
 
-  &__item {
+  .contacts__item {
     list-style: none;
+
+    &:not(:last-child) {
+      margin-right: $image-set-gap;
+    }
   }
 
-  &__item:not(:last-child) {
-    margin-right: $image-set-gap;
-  }
-
-  &__link {
+  .contacts__link {
     display: flex;
 
     font-weight: 500;
@@ -28,16 +28,16 @@
     transition-property: color;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
-  }
 
-  &__link:hover,
-  &__link:focus {
-    color: $accent-color;
-    fill: currentColor; // fill: var(--accent-color);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: currentColor; // fill: var(--accent-color);
+    }
   }
 
   // Иконки в header
-  &__icon {
+  .contacts__icon {
     display: inline-block;
     margin-right: 10px;
     fill: currentColor;

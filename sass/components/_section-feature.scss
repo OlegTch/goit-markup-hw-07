@@ -3,12 +3,12 @@
 .feature {
   padding-bottom: 47px;
 
-  &__item {
+  .feature__item {
     //   flex-basis: calc(100% / 4 - $image-set-gap);
     flex-basis: calc(100% / 4 - 30px);
   }
 
-  &__thumb-icon {
+  .feature__thumb-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@
     background-color: $secondary-bg-color;
   }
 
-  &__title {
+  .feature__title {
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: 700;
@@ -27,7 +27,7 @@
     text-transform: uppercase;
   }
 
-  &__text {
+  .feature__text {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 14px;

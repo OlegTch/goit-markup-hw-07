@@ -16,7 +16,7 @@
 
   transition: transform $duration $timing-function;
 
-  &__thumb {
+  .modal__thumb {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2px;
@@ -25,7 +25,7 @@
     margin-left: auto;
   }
 
-  &__button {
+  .modal__button {
     width: 30px;
     height: 30px;
     padding: 0;
@@ -40,10 +40,10 @@
     transition-property: fill;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
-  }
 
-  &__button:hover,
-  &__button:focus {
-    fill: $accent-color;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
 }
