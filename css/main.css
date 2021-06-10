@@ -220,10 +220,6 @@ ol {
   text-transform: uppercase;
 }
 
-.hero__button--primery {
-  padding: 10px 32px;
-}
-
 .button {
   font-family: inherit;
   display: inline-block;
@@ -246,7 +242,11 @@ ol {
   background-color: #188ce8;
 }
 
-.button.secondary {
+.button--primery {
+  padding: 10px 32px;
+}
+
+.button--secondary {
   padding: 6px 22px;
   min-width: 73px;
   font-family: inherit;
@@ -257,8 +257,7 @@ ol {
   line-height: 1.62;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.button--secondary:hover, .button--secondary:focus {
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -394,74 +393,43 @@ ol {
 }
 
 /*========== end секция клиенты ==========*/
-/*========== секция кнопок в портфолио ==========*/
-.button-section-list {
+.portfolio__button-list {
   margin-left: 0;
   margin-bottom: 50px;
   justify-content: center;
 }
 
-.button-section-list > .item {
+.portfolio__button-item.item {
   margin-right: 8px;
   margin-left: 0;
   margin-bottom: 0;
 }
 
-.button-section-list > .item:last-child {
+.portfolio__button-item.item:last-child {
   margin-right: 0;
 }
 
-/*========== end секция кнопок ==========*/
-/*========== секция портфолио ==========*/
-.work-section-list > .item {
+.portfolio__item {
   flex-basis: calc(100% / 3 - 30px);
-}
-
-/*плавная тень на портфолио*/
-.work-section-list > .item {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-title {
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.work-title-text {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.88;
-  color: #757575;
-}
-
-.work-title-container {
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  padding: 20px 24px;
-}
-
-.work-link {
+.portfolio__link {
   display: block;
 }
 
-.work-section-list .work-link:hover,
-.work-section-list .work-link:focus {
+.portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.work-image-thumb {
+.portfolio__image-thumb {
   position: relative;
   overflow: hidden;
 }
 
-/* добавление скрытого фона  */
-.work-overlay {
+.portfolio__overlay {
   /* display: inline-block; */
   position: absolute;
   top: 0;
@@ -477,14 +445,13 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-link:hover .work-overlay,
-.work-link:focus .work-overlay {
+.portfolio__link:hover .portfolio__overlay,
+.portfolio__link:focus .portfolio__overlay {
   opacity: 0.9;
   transform: translateY(0);
 }
 
-/* добавление скрытого текста  */
-.hidden-work-text {
+.portfolio__text--hidden {
   /* display: inline-block; */
   position: absolute;
   /* justify-content: center;
@@ -501,12 +468,33 @@ ol {
   color: #ffffff;
 }
 
-.work-link:hover .hidden-work-text,
-.work-link:focus .hidden-work-text {
+.portfolio__link:hover .portfolio__text--hidden,
+.portfolio__link:focus .portfolio__text--hidden {
   opacity: 1;
 }
 
-/*========== end секция портфолио ==========*/
+.portfolio__title-thumb {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.portfolio__title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio__text--primary {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
+}
+
 .footer {
   background-color: #2f303a;
 }
